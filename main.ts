@@ -6,3 +6,7 @@ function handler(req: Request): Response {
 
 console.log("Listening on http://localhost:8000");
 await serve(handler);
+
+setTimeout(() => {
+  bleh();
+}, 10);
