@@ -4,9 +4,9 @@ function handler(req: Request): Response {
   return new Response("Hello moon!");
 }
 
-console.log("Listening on http://localhost:8000");
-await serve(handler);
-
 setTimeout(() => {
   bleh();
 }, 10);
+
+console.log("Listening on http://localhost:8000");
+await serve(handler);
